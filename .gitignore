@@ -1,0 +1,45 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Code Editors
+/.idea
+/.vscode
+/*.csproj
+/*.sln
+*.swp
+*.vcxproj.user
+
+# Unity
+/Build
+/Library
+/Logs
+/Temp
+/.vs
+/obj
+Steam/ContentBuilder/
+Builds/
+UserSettings/
+Assets/AddressableAssetsData/Windows/
+Packages/com.unity.collections@0.15.0-preview.21/
+Assets/Ignored/
+Assets/SceneDependencyCache/
+Assets/SceneDependencyCache.meta
+Assets/Arts/
+Assets/TerrainSampleAssets/
+Assets/TerrainSampleAssets.meta
+Assets/Resources/PerformanceTestRunSettings.json.meta
+Assets/Resources/PerformanceTestRunSettings.json
+Assets/Resources/PerformanceTestRunInfo.json.meta
+Assets/Resources/PerformanceTestRunInfo.json
+OldBuild/
+
+
+.vs/
+.vsconfig
+bin/
+obj/
+Packages/nuget-packages/InstalledPackages/
