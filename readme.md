@@ -1,7 +1,7 @@
 # Unity BepuPhysics InterProcessCommunication
 
-This is a proof of concept showing bepu physics running in a seaparted process, sending data to unity for render
-Using named pipe for rpc/synchonization and memory mapped file for transfering data
+This is a proof of concept showing bepu physics running in a separated process, sending data to unity for render
+Using named pipe for rpc/synchronization and memory mapped file for transferring data
 
 ## How to run
 
