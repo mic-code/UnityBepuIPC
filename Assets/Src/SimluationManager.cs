@@ -143,13 +143,20 @@ public class SimulationManager : SingletonMono<SimulationManager>
     }
 
 
+    MotionState[] motionStatesBuffer;
+
     void ReadData(int size)
     {
-        var a = mmf.CreateViewAccessor();
-        var array = new MotionState[size];
-        a.ReadArray(0, array, 0, array.Length);
-        BodyRenderer.Instance.RenderActive(array);
-        DebugInfo.Set("count", array.Length);
+        var accessor = mmf.CreateViewAccessor();
+
+        if (motionStatesBuffer == null || motionStatesBuffer.Length < size)
+            motionStatesBuffer = new MotionState[size];
+
+        accessor.ReadArray(0, motionStatesBuffer, 0, size);
+        BodyRenderer.Instance.RenderActive(motionStatesBuffer);
+        DebugInfo.Set("count", motionStatesBuffer.Length);
+
+        accessor.Dispose();
     }
 
     void ListenSimToRender()

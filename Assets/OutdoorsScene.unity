@@ -400,6 +400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: 8643aa51cf3ad1646a3062558c9d4e9d, type: 2}
+  scale: {x: 0.5, y: 1, z: 3}
 --- !u!114 &368039156
 MonoBehaviour:
   m_ObjectHideFlags: 0
