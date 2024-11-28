@@ -70,6 +70,8 @@ public class BepuSim
                 }
             }
         }
+        a.Dispose();
+
         return count;
     }
 
